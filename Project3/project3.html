@@ -1,1 +1,21 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="project3.css">
+    <script defer src="project3.js"></script>
+</head>
+<body>
+    <div class="heading" style="align-items: center;">
+        <h3>Welcome to Etch a Sketch</h3>
+        <form id="gridForm">
+            <p>Enter Grid Size (between 10 - 100)</p>
+            <input type="number" id="size" name="size" min="10" max="100"><br><br>
+            <button id="submit" type="button">Submit</button><br><br>
+            <button id="refresh" type="button" onClick="window.location.reload();">New Note</button><br><br>
+        </form>
+    </div>
+</body>
+</html>
