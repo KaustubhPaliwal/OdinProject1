@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaustubh's Calculator</title>
+    <link rel="stylesheet" href="project4.css">
+    <script src="project4.js"></script>
+</head>
+<body>
+    <div class="Title">
+        Kaustubh's Calculator
+    </div>
+    <div class="main_box">
+        <div class="screen">
+            <p id="display"></p>
+        </div>
+        <div class="row" id="first_row">
+            <button type="button" id="AC" onclick="clearVal()">
+                C
+            </button>
+            <button type="button" class="Operations" id="Brackets">
+                ()
+            </button>
+            <button type="button" class="Operations" id="Percentage">
+                %
+            </button>
+            <button type="button" class="Operations" id="Division" onclick="operationVal('÷')">
+                ÷
+            </button>
+        </div>
+        <div class="row" id="second_row">
+            <button type="button" id="7" onclick="appendVal('7')">
+                7
+            </button>
+            <button type="button" id="8" onclick="appendVal('8')">
+                8
+            </button>
+            <button type="button" id="9" onclick="appendVal('9')">
+                9
+            </button>
+            <button type="button" class="Operations" id="Multiplication" onclick="operationVal('X')">
+                X
+            </button>
+        </div>
+        <div class="row" id="third_row">
+            <button type="button" id="4" onclick="appendVal('4')">
+                4
+            </button>
+            <button type="button" id="5" onclick="appendVal('5')">
+                5
+            </button>
+            <button type="button" id="6" onclick="appendVal('6')">
+                6
+            </button>
+            <button type="button" class="Operations" id="Substraction" onclick="operationVal('-')">
+                -
+            </button>
+        </div>
+        <div class="row" id="fourth_row">
+            <button type="button" id="1" onclick="appendVal('1')">
+                1
+            </button>
+            <button type="button" id="2" onclick="appendVal('2')">
+                2
+            </button>
+            <button type="button" id="3" onclick="appendVal('3')">
+                3
+            </button>
+            <button type="button" class="Operations" id="Addition" onclick="operationVal('+')">
+                +
+            </button>
+        </div>
+        <div class="row" id="fifth_row">
+            <button type="button" id="0" onclick="appendVal('0')">
+                0
+            </button>
+            <button type="button" id="." onclick="appendVal('.')">
+                .
+            </button>
+            <button type="button" id="BackSpace" onclick="onBackSpace()">
+                ←
+            </button>
+            <button type="button" class="Operations" id="Equals" onclick="onEquals()">
+                =
+            </button>
+        </div>
+    </div>
+    
+</body>
+</html>
